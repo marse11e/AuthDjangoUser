@@ -1,0 +1,161 @@
+2024-03-01 19:20:40,388 - RunBot - INFO - Запуск бота!
+2024-03-01 19:21:14,442 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:21:15,583 - RunBot - ERROR - Ошибка при запуске бота: Model.delete() got an unexpected keyword argument 'user_id'!
+2024-03-01 19:21:40,244 - RunBot - INFO - Запуск бота!
+2024-03-01 19:21:42,931 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:21:44,286 - RunBot - ERROR - Ошибка при запуске бота: Manager isn't accessible via CustomUser instances!
+2024-03-01 19:21:59,721 - RunBot - INFO - Запуск бота!
+2024-03-01 19:22:02,161 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:22:03,275 - RunBot - ERROR - Ошибка при запуске бота: 'UserManager' object has no attribute 'delete'!
+2024-03-01 19:22:27,735 - RunBot - INFO - Запуск бота!
+2024-03-01 19:22:30,313 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:22:32,051 - RunBot - ERROR - Ошибка при запуске бота: 'UserManager' object has no attribute 'delete'!
+2024-03-01 19:22:37,331 - RunBot - INFO - Запуск бота!
+2024-03-01 19:22:39,678 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:23:59,347 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:25:35,769 - RunBot - INFO - Запуск бота!
+2024-03-01 19:25:54,716 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 19:27:20,441 - RunBot - INFO - Запуск бота!
+2024-03-01 19:27:31,577 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-01 20:51:02,783 - RunBot - ERROR - Ошибка при запуске бота: HTTPSConnectionPool(host='api.telegram.org', port=443): Read timed out. (read timeout=25)!
+2024-03-05 19:22:50,237 - RunBot - INFO - Запуск бота!
+2024-03-05 19:25:13,325 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 19:25:13,328 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/accounts/bot.py", line 89, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2024-03-05 19:52:49,770 - RunBot - INFO - Запуск бота!
+2024-03-05 19:53:08,452 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 19:53:08,455 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/accounts/bot.py", line 89, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2024-03-05 19:57:07,616 - RunBot - INFO - Запуск бота!
+2024-03-05 19:57:21,656 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 19:57:21,657 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/accounts/bot.py", line 89, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2024-03-05 21:07:20,215 - RunBot - INFO - Запуск бота!
+2024-03-05 21:18:46,273 - RunBot - ERROR - Ошибка при запуске бота: CustomUser matching query does not exist.!
+2024-03-05 21:18:52,090 - RunBot - INFO - Запуск бота!
+2024-03-05 21:18:55,544 - RunBot - ERROR - Ошибка при запуске бота: CustomUser matching query does not exist.!
+2024-03-05 21:19:15,214 - RunBot - INFO - Запуск бота!
+2024-03-05 21:19:22,006 - Func start - INFO - Пользователь 1303424158 написал боту start
+2024-03-05 21:19:39,384 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 21:19:39,385 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/accounts/bot.py", line 89, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
+2024-03-05 21:20:57,905 - RunBot - INFO - Запуск бота!
+2024-03-05 21:58:23,348 - RunBot - INFO - Запуск бота!
+2024-03-05 21:59:09,627 - TeleBot - ERROR - Threaded polling exception: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+2024-03-05 21:59:09,629 - TeleBot - ERROR - Exception traceback:
+Traceback (most recent call last):
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1141, in __threaded_polling
+    self.worker_pool.raise_exceptions()
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 149, in raise_exceptions
+    raise self.exception_info
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/util.py", line 92, in run
+    task(*args, **kwargs)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 7868, in _run_middlewares_and_handler
+    result = handler['function'](message)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/accounts/bot.py", line 89, in last_news
+    bot.send_message(message.chat.id, text)
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/__init__.py", line 1673, in send_message
+    apihelper.send_message(
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 264, in send_message
+    return _make_request(token, method_url, params=payload, method='post')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 164, in _make_request
+    json_result = _check_result(method_name, result)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/marselle/BAZAARITC/Django/AuthDjangoUser/venv/lib/python3.11/site-packages/telebot/apihelper.py", line 191, in _check_result
+    raise ApiTelegramException(method_name, result, result_json)
+telebot.apihelper.ApiTelegramException: A request to the Telegram API was unsuccessful. Error code: 400. Description: Bad Request: message is too long
+
